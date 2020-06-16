@@ -26,7 +26,7 @@ api = Api(app)
 
 
 
-@app.route('/get-status/<int:input_ID>/', methods=['GET'])
+@app.route('/asset_id/<int:input_ID>/', methods=['GET'])
 def fn(input_ID):
     print('The inputted Asset:', int(input_ID))
     print(test_data.shape)
