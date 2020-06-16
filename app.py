@@ -27,17 +27,19 @@ api = Api(app)
 
 
 @app.route('/asset_id/<int:input_ID>/', methods=['GET'])
-def fn(input_ID):
-    print('The inputted Asset:', int(input_ID))
-    print(test_data.shape)
-
-
+@app.route('/asset_id/', methods=['GET'])
+def fn(input_ID=None):
+        
+    out_str = "Assest_ID does not exist"
+    
     # selecting the data for a particular asset
-    if int(input_ID) < 5:
-        asset_1 = test_data[test_data['Equip_ID'] == int(input_ID)].tail(8)
-    else:
-        print("Asset ID does not exist so providing the health of available Assest IDs")
+    if input_ID == None:
         asset_1 = test_data[test_data['Equip_ID'] == 1].tail(8).append(test_data[test_data['Equip_ID'] == 2].tail(8)).    append(test_data[test_data['Equip_ID'] == 3].tail(8)).append(test_data[test_data['Equip_ID'] == 4].tail(8))
+    elif int(input_ID) < 5:
+        asset_1 = test_data[test_data['Equip_ID'] == int(input_ID)].tail(8)
+    elif int(input_ID) >= 5:
+        return out_str
+         
 
 
 
