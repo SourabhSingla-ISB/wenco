@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, render_template
 from flask_restful import Resource,Api
 import pandas as pd
 import numpy as np
@@ -10,6 +10,8 @@ from sklearn.metrics import confusion_matrix, recall_score, precision_score
 from keras.models import Sequential
 from keras.layers import Dense, Dropout, LSTM, Activation
 from flask import jsonify
+import os, uuid, sys
+from azure.storage.blob import BlockBlobService, PublicAccess
 
 
 
@@ -19,77 +21,46 @@ loaded_model = pickle.load(open(filename, 'rb'))
 
 
 # load data
-test_data = pd.read_csv('test_data.csv') #file
+test_data = pd.read_excel('test_data.xlsx',sheet_name='Combined')
+
+# sensor details data
+sensor_details = pd.read_excel('test_data.xlsx',sheet_name='sensor_details')
+
 
 app = Flask(__name__)
 api = Api(app)
 
+# @app.route('/', methods=['GET','POST'])
+# def main():
+    # return render_template('index.htm')
 
 
-@app.route('/asset_id/<int:input_ID>/', methods=['GET'])
-@app.route('/asset_id/', methods=['GET'])
+
+#@app.route('/asset_id/<int:input_ID>/', methods=['GET'])
+@app.route('/', methods=['GET'])
 def fn(input_ID=None):
         
     out_str = "Assest_ID does not exist"
     
     # selecting the data for a particular asset
-    if input_ID == None:
-        asset_1 = test_data[test_data['Equip_ID'] == 1].tail(8).append(test_data[test_data['Equip_ID'] == 2].tail(8)).    append(test_data[test_data['Equip_ID'] == 3].tail(8)).append(test_data[test_data['Equip_ID'] == 4].tail(8))
-    elif int(input_ID) < 5:
-        asset_1 = test_data[test_data['Equip_ID'] == int(input_ID)].tail(8)
-    elif int(input_ID) >= 5:
-        return out_str
+    data = test_data
          
 
-
-
-    # data preprocessing
-
-    # dropping the columns which are not required
-    asset_1.drop('Machine',inplace=True,axis=1)
-
-    # converting categorical variables into dummy
-    asset_1 = pd.get_dummies(asset_1, columns=['Fuel Level', 'Engine', 'PayLoad', 
-                                                'Parking Brake', 'MotorTemp'])
-
-
     # MinMax normalization
-    asset_1['Cycle_Norm'] = asset_1['Cycle']
-    cols_normalize = asset_1.columns.difference(['Equip_ID','Cycle'])
+    data['Cycle_Norm'] = data['Cycle']
+    cols_normalize = data.columns.difference(['Equipment_Id','Cycle','Days','Eq-Model-Code', 'Description'])
     min_max_scaler = preprocessing.MinMaxScaler()
-    norm_test_df = pd.DataFrame(min_max_scaler.fit_transform(asset_1[cols_normalize]), 
+    norm_test_df = pd.DataFrame(min_max_scaler.fit_transform(data[cols_normalize]), 
                                  columns=cols_normalize, 
-                                 index=asset_1.index)
-    join_df = asset_1[asset_1.columns.difference(cols_normalize)].join(norm_test_df)
-    asset_1 = join_df.reindex(columns = asset_1.columns)
+                                 index=data.index)
+                                 
+    join_df = data[data.columns.difference(cols_normalize)].join(norm_test_df)
+    data = join_df.reindex(columns = data.columns)
 
 
 
-    # Columns should be there in dataframe
-    neccessary_columns = ['Battery voltage','Coolant Pressure','Cycle_Norm','Engine Coolant Temperature','Engine Oil Pressure',
-     'Engine Oil Temperature','Engine_Normal','Engine_Over Speed','Exhaust Temperature','Fuel Level_High','Fuel Level_Low',
-     'Fuel Level_Medium','Fuel Temperature','Hydraulic Oil Tank Temperature','MotorTemp_High','MotorTemp_Medium',
-     'MotorTemp_Normal','Parking Brake_OFF','Parking Brake_ON','PayLoad_Not OK','PayLoad_OK','Steering Oil Pressure',
-         'Wheel Motor Temp']
-
-    # finding and adding columns are not in dataframe from neccessary list
-    new_col = list(set(neccessary_columns) - set(list(asset_1.columns)))
-
-    # column count
-    col_count = len(new_col)
-
-
-
-    if col_count>0:
-        asset_1[new_col] = pd.DataFrame([[0] * col_count], index=asset_1.index)
-    else:
-        pass
-        
-
-
-
-    # pick a window size of 14 cycles
-    sequence_length = 7
+    # pick a window size of 719 cycles
+    sequence_length = 719
 
     # function to reshape features into (samples, time steps, features) 
     def gen_sequence(id_df, seq_length, seq_cols):
@@ -100,54 +71,78 @@ def fn(input_ID=None):
             
             
     # required columns 
-    sequence_cols = list(asset_1.columns.difference(['Equip_ID','Cycle']))
+    sequence_cols = list(data.columns.difference(['Equipment_Id','Cycle','Eq-Model-Code', 'Description']))
 
 
     # generator for the sequences
-    seq_gen = (list(gen_sequence(asset_1[asset_1['Equip_ID']==id], sequence_length, sequence_cols)) 
-               for id in asset_1['Equip_ID'].unique())
+    seq_gen = (list(gen_sequence(data[data['Equipment_Id']==id], sequence_length, sequence_cols)) 
+               for id in data['Equipment_Id'].unique())
 
 
     # generate sequences and convert to numpy array
     seq_array = np.concatenate(list(seq_gen)).astype(np.float32)
-    #seq_array.shape
+    seq_array.shape
 
-
-
-  
-
-    dict_ = {}
 
     # predicting the value
-    pred_value = np.squeeze(loaded_model.predict_classes(seq_array))
-    if pred_value.size == 1:
-        pred_value = np.squeeze(loaded_model.predict_classes(seq_array)).item()
-        if pred_value==0:
-            dict_[input_ID] = 0
-            print("Mantainance not required for Asset ID: ",input_ID)
-        elif pred_value==1:
-            dict_[input_ID] = 1
-            print("Mantainance required for Asset ID: ",input_ID)
-        else:
-            print("No Result")
+    pred_value = loaded_model.predict(seq_array)
+
+    pred_value[pred_value>=0.5] = 1
+    pred_value[pred_value<0.5] = 0
+
+    
+    
+    # converting the output into dictionary
+    # converting the output into dictionary
+    d = {}
+    for i, row in enumerate(pred_value):
+        d[data['Equipment_Id'].unique()[i]] = [int(x) for x in row.tolist()]
+                
+    
+    # # selecting those assets which require maintenance
+    # newDict = dict()
+    # if len(d) > 1:
+        # for (key, value) in d.items():
+            # if any(val==1 for val in value):
+                # newDict[key] = value
+                # d = newDict
+    
+    # converting dictionary into dataframe
+    df = pd.DataFrame.from_dict(d, orient='index')
+
+    # selecting only those assets which require maintainance
+    df = df.loc[(df!=0).any(axis=1)]
+
+    # Including index as column
+    df.reset_index(level=0, inplace=True)
+
+    # renaming columns
+    df.columns = ['Equipment_Id', 'LeftCoolant', 'RightCoolant', 'LeftHose','RightHose']
+
+    # replacing 0/1 with Required/Not-Required
+    df.replace({0: 'Not-Required', 1: 'Required'},inplace=True)
+
+    # merging dataframes to get sensors details
+    result = pd.merge(df,sensor_details, how='left',on='Equipment_Id')
+
+    # re-arranging the columns
+    result = result[['Equipment_Id','Eq-Model-Code', 'Description','LeftCoolant', 'RightCoolant', 'LeftHose','RightHose']]
+
+    # saving dataframe into azure blob as a csv file
+    output = result.to_csv (index_label="SNo.", encoding = "utf-8")
+
+    accountName = "wenco1"
+    accountKey = "FwniZZzezkiacqf269reGr0kFdFg8vG+gIZG4uxSh7eIczYq0hHYb0+GRFBDvG/GmsK7WSLpB4hzh+dGd6AS7g=="
+    containerName = "wenco1"
+
+
+    blobService = BlockBlobService(account_name=accountName, account_key=accountKey)
+
+    blobService.create_blob_from_text(containerName, 'Prediction.csv', output)
+    
         
-    elif pred_value.size > 1:
-        i = 1
-        for val in pred_value:
-            if val==0:
-                dict_[i] = 0
-                print("Mantainance not required for Asset ID: ",i)
-            elif val==1:
-                dict_[i] = 1
-                print("Mantainance required for Asset ID: ",i)
-            else:
-                print("No Result")
-            i = i+1
-    else:
-        print("No Result")
-    
-    
-    return jsonify(dict_)
+    #return jsonify(output)
+    return ("Prediction file has been successfully uploaded on Azure Blob")
 
 
  
