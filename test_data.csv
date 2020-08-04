@@ -17,9 +17,9 @@ Equip_ID,Machine,Cycle,Battery voltage,Engine Oil Pressure,Engine Oil Temperatur
 1,Excavator,16,13.3,39,94,24,204,67,107,241,690,146,High,Normal,Not OK,OFF,Normal
 1,Excavator,17,13.1,49,76,18,202,93,112,332,599,155,Medium,Normal,Not OK,OFF,Normal
 1,Excavator,18,13.4,38,96,24,217,91,92,332,597,157,Low,Over Speed,OK,OFF,Normal
-1,Excavator,19,13.0,30,57,22,205,93,119,352,526,152,High,Normal,OK,OFF,High
+1,Excavator,19,13,30,57,22,205,93,119,352,526,152,High,Normal,OK,OFF,High
 1,Excavator,20,13.7,14,34,5,210,53,112,369,529,142,High,Normal,OK,OFF,Normal
-1,Excavator,21,14.0,20,78,11,215,31,117,309,590,155,Low,Normal,OK,OFF,Normal
+1,Excavator,21,14,20,78,11,215,31,117,309,590,155,Low,Normal,OK,OFF,Normal
 1,Excavator,22,13.6,33,80,8,195,8,113,253,649,147,Medium,Normal,OK,OFF,Normal
 1,Excavator,23,12.8,11,34,24,213,73,93,319,529,158,Medium,Over Speed,OK,OFF,Normal
 1,Excavator,24,12.7,46,46,22,208,3,90,178,565,150,Medium,Normal,OK,OFF,Normal
@@ -36,23 +36,23 @@ Equip_ID,Machine,Cycle,Battery voltage,Engine Oil Pressure,Engine Oil Temperatur
 1,Excavator,35,13.2,48,47,6,214,12,119,196,560,150,Medium,Over Speed,OK,OFF,High
 1,Excavator,36,14.6,27,42,25,198,16,85,228,616,150,Medium,Normal,OK,OFF,Normal
 1,Excavator,37,13.8,33,59,21,196,82,94,217,521,154,Low,Over Speed,OK,ON,Normal
-1,Excavator,38,13.0,12,58,4,196,8,97,293,594,156,Medium,Normal,OK,ON,Normal
+1,Excavator,38,13,12,58,4,196,8,97,293,594,156,Medium,Normal,OK,ON,Normal
 1,Excavator,39,13.2,17,34,22,201,37,123,288,581,143,Medium,Normal,OK,OFF,High
 1,Excavator,40,13.3,41,50,21,192,4,104,213,609,141,High,Normal,Not OK,OFF,Normal
 1,Excavator,41,14.5,28,76,29,206,14,93,315,679,158,Medium,Normal,Not OK,OFF,Normal
 1,Excavator,42,13.1,32,67,29,209,43,95,339,698,159,Low,Over Speed,OK,OFF,Normal
-1,Excavator,43,14.0,46,62,6,211,5,103,364,601,159,High,Normal,OK,OFF,Normal
+1,Excavator,43,14,46,62,6,211,5,103,364,601,159,High,Normal,OK,OFF,Normal
 1,Excavator,44,14.7,22,69,15,207,94,98,321,574,160,High,Normal,OK,OFF,Normal
 1,Excavator,45,13.7,28,34,16,201,28,114,262,643,147,Low,Normal,OK,OFF,High
 1,Excavator,46,13.7,40,53,17,218,31,99,293,649,151,Medium,Normal,OK,OFF,Normal
-1,Excavator,47,14.0,24,91,30,199,1,92,359,624,148,Medium,Over Speed,OK,OFF,Normal
+1,Excavator,47,14,24,91,30,199,1,92,359,624,148,Medium,Over Speed,OK,OFF,Normal
 1,Excavator,48,13.9,15,73,18,216,53,119,194,502,142,Medium,Normal,OK,OFF,Normal
 1,Excavator,49,14.3,15,35,4,190,62,124,154,528,158,Low,Over Speed,OK,ON,High
 1,Excavator,50,13.1,39,94,15,216,67,105,317,530,146,Medium,Normal,OK,ON,Normal
 1,Excavator,51,14.4,26,71,14,216,21,112,255,606,154,Medium,Normal,OK,OFF,Normal
-1,Excavator,52,13.0,48,95,7,219,42,109,234,598,142,High,Normal,Not OK,OFF,Normal
+1,Excavator,52,13,48,95,7,219,42,109,234,598,142,High,Normal,Not OK,OFF,Normal
 1,Excavator,53,14.7,16,83,12,211,43,119,280,673,153,Medium,Normal,Not OK,OFF,Normal
-1,Excavator,54,14.0,30,32,28,198,75,107,175,514,146,Low,Over Speed,OK,OFF,Normal
+1,Excavator,54,14,30,32,28,198,75,107,175,514,146,Low,Over Speed,OK,OFF,Normal
 1,Excavator,55,14.2,30,93,17,200,63,109,289,683,156,High,Normal,OK,OFF,Medium
 1,Excavator,56,13.7,11,42,16,193,30,113,306,593,152,High,Normal,OK,OFF,Normal
 1,Excavator,57,14.3,24,92,19,197,4,80,189,594,145,Low,Normal,OK,OFF,Normal
@@ -61,7 +61,7 @@ Equip_ID,Machine,Cycle,Battery voltage,Engine Oil Pressure,Engine Oil Temperatur
 1,Excavator,60,14.3,50,75,8,212,88,122,205,565,158,Medium,Normal,OK,OFF,Normal
 1,Excavator,61,13.7,16,55,22,192,43,97,210,525,151,Low,Over Speed,OK,ON,Normal
 1,Excavator,62,13.1,30,58,17,213,51,111,168,625,156,Medium,Normal,OK,ON,Normal
-1,Excavator,63,13.0,13,30,6,195,28,113,269,616,152,Medium,Normal,OK,OFF,Normal
+1,Excavator,63,13,13,30,6,195,28,113,269,616,152,Medium,Normal,OK,OFF,Normal
 1,Excavator,64,14.6,17,97,25,205,31,122,182,665,157,High,Normal,Not OK,OFF,Normal
 1,Excavator,65,14.7,42,90,20,191,11,101,279,647,141,Medium,Normal,Not OK,OFF,Medium
 1,Excavator,66,12.6,20,74,16,201,22,120,328,530,151,Low,Over Speed,OK,OFF,Normal
@@ -82,14 +82,14 @@ Equip_ID,Machine,Cycle,Battery voltage,Engine Oil Pressure,Engine Oil Temperatur
 1,Excavator,81,13.6,37,79,29,219,43,96,289,538,145,Medium,Over Speed,OK,OFF,Normal
 1,Excavator,82,13.3,27,73,10,198,50,101,202,526,151,Medium,Normal,OK,OFF,Normal
 1,Excavator,83,12.9,23,32,8,201,63,97,368,526,158,Medium,Normal,OK,OFF,Normal
-1,Excavator,84,19.0,55,129,16,214,70,119,179,630,146,Medium,Normal,OK,OFF,High
-1,Excavator,85,15.0,63,131,28,210,19,95,355,566,160,Medium,Normal,OK,OFF,High
-1,Excavator,86,20.0,66,125,13,196,52,94,280,597,145,Low,Over Speed,OK,OFF,High
-1,Excavator,87,16.0,75,137,10,216,63,101,330,692,145,Low,Normal,OK,OFF,High
-1,Excavator,88,19.0,61,142,15,200,72,93,182,599,147,Medium,Normal,Not OK,OFF,High
-1,Excavator,89,17.0,62,120,26,214,58,108,278,576,140,Low,Normal,Not OK,OFF,High
-1,Excavator,90,15.0,56,143,22,202,55,81,333,522,156,Medium,Normal,OK,OFF,High
-2,Hauler,1,13.0,32,31,10,213,99,123,221,602,143,Low,Over Speed,OK,ON,Normal
+1,Excavator,84,19,55,129,16,214,70,119,179,630,146,Medium,Normal,OK,OFF,High
+1,Excavator,85,15,63,131,28,210,19,95,355,566,160,Medium,Normal,OK,OFF,High
+1,Excavator,86,20,66,125,13,196,52,94,280,597,145,Low,Over Speed,OK,OFF,High
+1,Excavator,87,16,75,137,10,216,63,101,330,692,145,Low,Normal,OK,OFF,High
+1,Excavator,88,19,61,142,15,200,72,93,182,599,147,Medium,Normal,Not OK,OFF,High
+1,Excavator,89,17,62,120,26,214,58,108,278,576,140,Low,Normal,Not OK,OFF,High
+1,Excavator,90,15,56,143,22,202,55,81,333,522,156,Medium,Normal,OK,OFF,High
+2,Hauler,1,13,32,31,10,213,99,123,221,602,143,Low,Over Speed,OK,ON,Normal
 2,Hauler,2,13.2,11,33,7,207,28,100,261,617,142,Medium,Normal,OK,ON,Normal
 2,Hauler,3,14.1,11,96,18,197,62,103,185,500,160,Medium,Normal,OK,OFF,High
 2,Hauler,4,14.6,34,42,18,194,11,95,341,553,152,High,Normal,Not OK,OFF,Normal
@@ -98,7 +98,7 @@ Equip_ID,Machine,Cycle,Battery voltage,Engine Oil Pressure,Engine Oil Temperatur
 2,Hauler,7,14.1,25,64,13,220,81,83,231,541,160,High,Normal,OK,OFF,High
 2,Hauler,8,14.2,20,63,27,208,70,125,253,565,147,High,Normal,OK,OFF,Normal
 2,Hauler,9,13.2,40,76,12,219,38,120,272,525,145,Low,Normal,OK,OFF,Normal
-2,Hauler,10,13.0,46,72,11,211,95,96,339,666,149,Medium,Normal,OK,OFF,Normal
+2,Hauler,10,13,46,72,11,211,95,96,339,666,149,Medium,Normal,OK,OFF,Normal
 2,Hauler,11,14.3,45,37,21,218,69,122,370,556,148,Medium,Over Speed,OK,OFF,Normal
 2,Hauler,12,14.1,40,34,9,197,97,89,216,585,141,Medium,Normal,OK,OFF,Normal
 2,Hauler,13,13.9,17,67,30,212,5,124,233,609,140,Low,Over Speed,OK,ON,High
@@ -107,7 +107,7 @@ Equip_ID,Machine,Cycle,Battery voltage,Engine Oil Pressure,Engine Oil Temperatur
 2,Hauler,16,14.6,28,89,10,200,48,88,300,685,150,High,Normal,Not OK,OFF,Normal
 2,Hauler,17,13.8,22,40,13,190,34,115,301,591,152,Medium,Normal,Not OK,OFF,High
 2,Hauler,18,14.2,35,96,15,216,47,123,195,579,141,Low,Over Speed,OK,OFF,Normal
-2,Hauler,19,13.0,27,52,16,213,61,97,324,597,146,High,Normal,OK,OFF,Normal
+2,Hauler,19,13,27,52,16,213,61,97,324,597,146,High,Normal,OK,OFF,Normal
 2,Hauler,20,13.5,12,82,19,211,57,119,194,541,152,High,Normal,OK,OFF,Normal
 2,Hauler,21,14.2,22,33,21,219,84,111,158,520,150,Low,Normal,OK,OFF,Normal
 2,Hauler,22,14.6,21,67,26,220,3,95,290,694,148,Medium,Normal,OK,OFF,Normal
@@ -130,21 +130,21 @@ Equip_ID,Machine,Cycle,Battery voltage,Engine Oil Pressure,Engine Oil Temperatur
 2,Hauler,39,12.8,15,65,21,215,88,122,213,692,148,Medium,Normal,OK,OFF,Normal
 2,Hauler,40,12.8,43,31,11,215,54,95,180,659,152,High,Normal,Not OK,OFF,Normal
 2,Hauler,41,14.5,34,65,17,211,81,99,197,621,144,Medium,Normal,Not OK,OFF,Normal
-2,Hauler,42,14.0,16,50,13,197,66,122,246,538,145,Low,Over Speed,OK,OFF,Normal
+2,Hauler,42,14,16,50,13,197,66,122,246,538,145,Low,Over Speed,OK,OFF,Normal
 2,Hauler,43,13.5,24,52,11,197,36,95,330,581,147,High,Normal,OK,OFF,High
 2,Hauler,44,13.5,42,53,24,200,56,104,361,650,147,High,Normal,OK,OFF,Normal
 2,Hauler,45,12.6,33,47,24,218,75,109,193,547,147,Low,Normal,OK,OFF,Normal
 2,Hauler,46,13.1,39,64,5,201,97,111,301,615,148,Medium,Normal,OK,OFF,Normal
 2,Hauler,47,14.5,28,72,30,201,70,103,252,546,159,Medium,Over Speed,OK,OFF,High
 2,Hauler,48,14.1,47,43,20,216,74,124,263,567,152,Medium,Normal,OK,OFF,Normal
-2,Hauler,49,13.0,45,70,8,208,23,125,269,680,157,Low,Over Speed,OK,ON,Normal
+2,Hauler,49,13,45,70,8,208,23,125,269,680,157,Low,Over Speed,OK,ON,Normal
 2,Hauler,50,14.3,22,86,23,219,11,91,174,584,152,Medium,Normal,OK,ON,Normal
 2,Hauler,51,13.1,40,39,9,191,35,93,306,543,159,Medium,Normal,OK,OFF,Normal
 2,Hauler,52,13.6,31,79,17,200,48,115,354,671,153,High,Normal,Not OK,OFF,Normal
 2,Hauler,53,14.5,10,70,4,203,12,83,232,501,158,Medium,Normal,Not OK,OFF,High
 2,Hauler,54,13.8,31,63,11,206,43,108,188,608,160,Low,Over Speed,OK,OFF,Normal
 2,Hauler,55,14.2,16,82,13,216,18,95,234,576,159,High,Normal,OK,OFF,Normal
-2,Hauler,56,13.0,37,36,13,200,85,116,170,662,146,High,Normal,OK,OFF,Normal
+2,Hauler,56,13,37,36,13,200,85,116,170,662,146,High,Normal,OK,OFF,Normal
 2,Hauler,57,14.4,18,35,24,203,60,104,153,594,144,Low,Normal,OK,OFF,High
 2,Hauler,58,14.3,38,53,22,204,67,109,329,512,158,Medium,Normal,OK,OFF,Normal
 2,Hauler,59,13.4,40,51,10,194,72,82,351,675,142,Medium,Over Speed,OK,OFF,Normal
@@ -154,22 +154,22 @@ Equip_ID,Machine,Cycle,Battery voltage,Engine Oil Pressure,Engine Oil Temperatur
 2,Hauler,63,13.3,29,48,17,192,72,95,368,603,159,Medium,Normal,OK,OFF,High
 2,Hauler,64,13.8,42,47,21,201,39,80,365,512,160,High,Normal,Not OK,OFF,Normal
 2,Hauler,65,12.7,22,95,8,204,58,81,166,638,147,Medium,Normal,Not OK,OFF,Normal
-2,Hauler,66,13.0,32,89,15,207,27,91,336,586,142,Low,Over Speed,OK,OFF,Normal
+2,Hauler,66,13,32,89,15,207,27,91,336,586,142,Low,Over Speed,OK,OFF,Normal
 2,Hauler,67,13.2,25,57,5,196,16,109,191,616,141,High,Normal,OK,OFF,High
 2,Hauler,68,13.7,32,79,23,194,21,97,219,590,145,High,Normal,OK,OFF,Normal
 2,Hauler,69,13.5,44,30,8,219,70,83,353,644,151,Low,Normal,OK,OFF,Normal
 2,Hauler,70,12.8,36,63,17,207,73,81,317,640,146,Medium,Normal,OK,OFF,Normal
 2,Hauler,71,13.5,16,58,16,205,24,106,319,661,154,Medium,Over Speed,OK,OFF,Normal
 2,Hauler,72,14.3,50,78,24,201,9,92,341,508,146,Medium,Normal,OK,OFF,Normal
-2,Hauler,73,13.0,50,32,21,199,92,117,284,657,141,Low,Normal,OK,OFF,Normal
+2,Hauler,73,13,50,32,21,199,92,117,284,657,141,Low,Normal,OK,OFF,Normal
 2,Hauler,74,13.5,30,90,11,211,12,83,200,649,151,Medium,Normal,OK,OFF,Normal
-2,Hauler,75,14.0,21,85,24,192,25,118,183,567,140,Medium,Normal,OK,OFF,Normal
+2,Hauler,75,14,21,85,24,192,25,118,183,567,140,Medium,Normal,OK,OFF,Normal
 2,Hauler,76,14.5,19,45,10,190,82,120,242,549,160,High,Normal,Not OK,OFF,Normal
 2,Hauler,77,13.2,46,56,9,192,53,104,280,519,153,Medium,Normal,OK,ON,Normal
 2,Hauler,78,13.9,28,89,19,201,20,90,189,671,141,Low,Normal,OK,ON,High
 2,Hauler,79,13.7,21,41,20,190,46,108,308,681,145,High,Over Speed,OK,OFF,Normal
 2,Hauler,80,13.2,43,98,21,194,80,87,310,604,140,High,Normal,OK,OFF,Normal
-2,Hauler,81,13.0,43,31,13,219,90,107,192,572,152,Low,Normal,OK,OFF,Normal
+2,Hauler,81,13,43,31,13,219,90,107,192,572,152,Low,Normal,OK,OFF,Normal
 2,Hauler,82,13.9,41,93,10,197,99,106,285,689,143,Medium,Normal,OK,OFF,High
 2,Hauler,83,14.3,20,86,16,215,85,103,226,623,158,Medium,Normal,OK,OFF,Normal
 2,Hauler,84,13.7,45,49,41,234,128,97,320,599,140,Medium,Over Speed,Not OK,OFF,Normal
@@ -205,7 +205,7 @@ Equip_ID,Machine,Cycle,Battery voltage,Engine Oil Pressure,Engine Oil Temperatur
 3,Roller,24,13.2,42,58,18,215,6,117,300,515,145,Medium,Normal,OK,OFF,Normal
 3,Roller,25,13.9,18,97,15,218,34,96,335,687,150,Low,Over Speed,OK,ON,High
 3,Roller,26,12.6,22,32,12,193,55,93,173,645,160,Medium,Normal,OK,ON,Normal
-3,Roller,27,13.0,18,100,10,213,2,121,290,688,143,Medium,Normal,OK,OFF,Normal
+3,Roller,27,13,18,100,10,213,2,121,290,688,143,Medium,Normal,OK,OFF,Normal
 3,Roller,28,13.9,10,41,29,210,36,106,224,577,159,High,Normal,Not OK,OFF,Normal
 3,Roller,29,13.4,33,84,30,193,60,114,265,511,154,Medium,Normal,Not OK,OFF,Normal
 3,Roller,30,12.7,19,87,11,200,7,112,267,615,157,Low,Over Speed,OK,OFF,Normal
@@ -214,15 +214,15 @@ Equip_ID,Machine,Cycle,Battery voltage,Engine Oil Pressure,Engine Oil Temperatur
 3,Roller,33,14.5,43,60,10,198,13,99,347,507,154,Low,Normal,OK,OFF,Normal
 3,Roller,34,14.2,23,84,8,217,23,110,272,513,151,Medium,Normal,OK,OFF,Normal
 3,Roller,35,13.6,40,61,22,192,12,116,297,696,148,Medium,Over Speed,OK,OFF,High
-3,Roller,36,14.0,38,60,22,212,62,95,363,587,151,Medium,Normal,OK,OFF,Normal
+3,Roller,36,14,38,60,22,212,62,95,363,587,151,Medium,Normal,OK,OFF,Normal
 3,Roller,37,14.3,22,43,14,200,100,86,318,649,154,Low,Over Speed,OK,ON,Normal
 3,Roller,38,14.5,15,33,9,211,28,96,365,565,145,Medium,Normal,OK,ON,Normal
-3,Roller,39,14.0,43,60,20,219,41,96,265,687,144,Medium,Normal,OK,OFF,Normal
+3,Roller,39,14,43,60,20,219,41,96,265,687,144,Medium,Normal,OK,OFF,Normal
 3,Roller,40,13.7,39,88,5,217,10,101,217,503,157,High,Normal,Not OK,OFF,Normal
 3,Roller,41,14.5,24,88,21,207,92,124,334,671,140,Medium,Normal,Not OK,OFF,High
 3,Roller,42,14.3,28,30,30,195,15,114,351,611,159,Low,Over Speed,OK,OFF,Normal
 3,Roller,43,14.2,15,38,5,195,61,100,203,527,147,High,Normal,OK,OFF,Normal
-3,Roller,44,13.0,46,76,17,209,4,80,232,666,155,High,Normal,OK,OFF,Normal
+3,Roller,44,13,46,76,17,209,4,80,232,666,155,High,Normal,OK,OFF,Normal
 3,Roller,45,14.6,24,32,22,220,99,109,312,610,155,Low,Normal,OK,OFF,High
 3,Roller,46,12.7,33,30,26,206,10,80,306,526,141,Medium,Normal,OK,OFF,Normal
 3,Roller,47,13.7,50,85,30,197,55,96,303,509,153,Medium,Over Speed,OK,OFF,Normal
@@ -240,7 +240,7 @@ Equip_ID,Machine,Cycle,Battery voltage,Engine Oil Pressure,Engine Oil Temperatur
 3,Roller,59,12.6,31,61,23,217,71,107,285,620,141,Medium,Over Speed,OK,OFF,Normal
 3,Roller,60,14.2,32,35,4,218,9,93,282,592,141,Medium,Normal,OK,OFF,Normal
 3,Roller,61,13.2,50,70,11,192,53,114,164,527,143,Low,Over Speed,OK,ON,High
-3,Roller,62,13.0,20,68,5,208,89,82,199,544,146,Medium,Normal,OK,ON,Normal
+3,Roller,62,13,20,68,5,208,89,82,199,544,146,Medium,Normal,OK,ON,Normal
 3,Roller,63,12.8,42,65,4,196,74,114,292,619,144,Medium,Normal,OK,OFF,Normal
 3,Roller,64,14.1,50,35,24,219,42,107,327,689,160,High,Normal,Not OK,OFF,Normal
 3,Roller,65,14.3,33,45,11,190,92,114,230,541,159,Medium,Normal,Not OK,OFF,Medium
@@ -249,10 +249,10 @@ Equip_ID,Machine,Cycle,Battery voltage,Engine Oil Pressure,Engine Oil Temperatur
 3,Roller,68,12.6,43,75,17,215,55,90,195,564,153,High,Normal,OK,OFF,Normal
 3,Roller,69,13.8,38,60,8,197,28,100,182,536,151,Low,Normal,OK,OFF,Normal
 3,Roller,70,14.4,38,43,7,196,18,114,282,542,158,Medium,Normal,OK,OFF,Normal
-3,Roller,71,13.0,46,88,4,211,71,111,311,606,159,Medium,Normal,OK,OFF,Medium
+3,Roller,71,13,46,88,4,211,71,111,311,606,159,Medium,Normal,OK,OFF,Medium
 3,Roller,72,13.6,37,49,14,195,64,101,161,510,156,Medium,Normal,OK,OFF,Normal
 3,Roller,73,13.9,10,51,12,197,22,95,348,664,149,Medium,Normal,OK,OFF,Normal
-3,Roller,74,13.0,13,67,20,202,77,92,370,513,143,Medium,Normal,OK,OFF,Normal
+3,Roller,74,13,13,67,20,202,77,92,370,513,143,Medium,Normal,OK,OFF,Normal
 3,Roller,75,14.5,27,65,29,197,87,124,228,652,157,Medium,Normal,OK,OFF,Normal
 3,Roller,76,14.3,31,83,26,201,17,123,352,513,158,Low,Normal,OK,ON,Normal
 3,Roller,77,14.2,25,58,23,210,10,86,167,508,151,Medium,Over Speed,OK,ON,High
@@ -260,7 +260,7 @@ Equip_ID,Machine,Cycle,Battery voltage,Engine Oil Pressure,Engine Oil Temperatur
 3,Roller,79,13.4,21,61,18,200,45,110,229,641,144,High,Normal,Not OK,OFF,Normal
 3,Roller,80,12.7,50,70,23,213,72,106,283,541,150,Medium,Normal,OK,OFF,Normal
 3,Roller,81,13.7,29,84,10,210,71,91,162,698,142,Low,Normal,OK,OFF,Medium
-3,Roller,82,13.0,17,88,18,203,72,116,206,506,146,High,Normal,OK,OFF,Normal
+3,Roller,82,13,17,88,18,203,72,116,206,506,146,High,Normal,OK,OFF,Normal
 3,Roller,83,12.9,32,56,13,212,72,119,303,571,146,High,Normal,OK,OFF,Normal
 3,Roller,84,14.5,33,77,26,214,41,133,375,863,158,Low,Over Speed,OK,OFF,Normal
 3,Roller,85,12.9,11,69,16,192,6,142,380,732,147,Medium,Over Speed,OK,OFF,Normal
@@ -280,8 +280,8 @@ Equip_ID,Machine,Cycle,Battery voltage,Engine Oil Pressure,Engine Oil Temperatur
 4,Crane,9,14.6,30,65,4,216,81,115,239,502,142,Low,Normal,OK,OFF,High
 4,Crane,10,14.5,50,72,30,200,48,104,158,610,158,Medium,Normal,OK,OFF,Normal
 4,Crane,11,13.9,41,83,21,216,94,94,197,561,145,Medium,Over Speed,OK,OFF,Normal
-4,Crane,12,14.0,48,82,17,215,50,93,322,634,156,Medium,Normal,OK,OFF,Normal
-4,Crane,13,14.0,46,32,11,198,13,95,233,662,147,Low,Over Speed,OK,ON,High
+4,Crane,12,14,48,82,17,215,50,93,322,634,156,Medium,Normal,OK,OFF,Normal
+4,Crane,13,14,46,32,11,198,13,95,233,662,147,Low,Over Speed,OK,ON,High
 4,Crane,14,14.7,27,93,10,200,65,82,360,540,154,Medium,Normal,OK,ON,Normal
 4,Crane,15,14.2,46,36,19,213,22,86,253,658,141,Medium,Normal,OK,OFF,Normal
 4,Crane,16,14.4,29,72,17,204,31,95,308,537,140,High,Normal,Not OK,OFF,Normal
@@ -299,7 +299,7 @@ Equip_ID,Machine,Cycle,Battery voltage,Engine Oil Pressure,Engine Oil Temperatur
 4,Crane,28,14.2,27,36,17,199,38,91,211,665,144,High,Normal,Not OK,OFF,Normal
 4,Crane,29,14.6,14,72,17,202,96,95,278,519,145,Medium,Normal,Not OK,OFF,High
 4,Crane,30,12.9,14,67,11,191,46,83,288,654,153,Low,Over Speed,OK,OFF,Normal
-4,Crane,31,14.0,26,62,8,211,35,101,241,546,147,High,Normal,OK,OFF,Normal
+4,Crane,31,14,26,62,8,211,35,101,241,546,147,High,Normal,OK,OFF,Normal
 4,Crane,32,13.8,10,80,22,204,3,87,211,690,150,High,Normal,OK,OFF,Normal
 4,Crane,33,14.3,31,51,16,215,74,102,208,502,157,Low,Normal,OK,OFF,High
 4,Crane,34,13.8,16,61,13,208,42,94,277,547,151,Medium,Normal,OK,OFF,Normal
@@ -314,7 +314,7 @@ Equip_ID,Machine,Cycle,Battery voltage,Engine Oil Pressure,Engine Oil Temperatur
 4,Crane,43,13.8,37,75,19,207,7,121,185,502,147,High,Normal,OK,OFF,High
 4,Crane,44,14.2,44,98,17,218,22,81,159,528,148,High,Normal,OK,OFF,Normal
 4,Crane,45,12.9,27,31,28,206,64,81,278,678,145,Low,Normal,OK,OFF,Normal
-4,Crane,46,13.0,47,82,4,205,88,104,353,686,144,Medium,Normal,OK,OFF,Normal
+4,Crane,46,13,47,82,4,205,88,104,353,686,144,Medium,Normal,OK,OFF,Normal
 4,Crane,47,13.5,37,86,28,201,20,81,217,584,156,Medium,Over Speed,OK,OFF,Normal
 4,Crane,48,14.6,45,95,23,213,3,103,272,555,153,Medium,Normal,OK,OFF,Normal
 4,Crane,49,14.7,23,38,20,192,13,121,240,678,145,Low,Over Speed,OK,ON,High
@@ -346,7 +346,7 @@ Equip_ID,Machine,Cycle,Battery voltage,Engine Oil Pressure,Engine Oil Temperatur
 4,Crane,75,13.2,37,98,20,220,85,111,204,611,153,Medium,Normal,OK,OFF,Normal
 4,Crane,76,14.5,46,33,10,193,89,106,162,501,150,Medium,Normal,OK,OFF,Medium
 4,Crane,77,12.8,32,88,14,201,78,116,246,554,155,Low,Over Speed,OK,ON,Normal
-4,Crane,78,14.0,21,58,15,199,63,112,233,616,152,Medium,Normal,OK,ON,Normal
+4,Crane,78,14,21,58,15,199,63,112,233,616,152,Medium,Normal,OK,ON,Normal
 4,Crane,79,13.2,48,80,20,208,62,103,150,660,152,Medium,Over Speed,OK,OFF,Normal
 4,Crane,80,13.3,28,83,17,213,80,117,227,565,154,High,Normal,OK,OFF,Medium
 4,Crane,81,13.3,42,34,14,206,51,115,244,666,150,Medium,Normal,Not OK,OFF,Normal
